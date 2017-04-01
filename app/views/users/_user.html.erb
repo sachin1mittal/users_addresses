@@ -1,0 +1,5 @@
+<tr>
+  <td><%= user.name %></td>
+  <td><%= user.active_address.try :full_address %></td>
+  <td><%= link_to 'Edit', edit_user_path(user), class: 'btn btn-warning' %></td>
+</tr>
